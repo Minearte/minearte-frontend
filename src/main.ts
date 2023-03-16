@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
 // Import dependencies
 import Vuesax from 'vuesax3'
@@ -9,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // App modules
 import router from './router'
 import * as lang from './lang/defaults'
-console.log(lang.es)
+import './assets/css/main.css'
 const app:any = createApp(App)
 app.use(Vuesax)
 app.use(router)

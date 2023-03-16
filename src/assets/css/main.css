@@ -1,0 +1,61 @@
+html {
+  background-color: #1f1f24 !important;
+}
+
+#app {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #1f1f24 !important;
+  color: white;
+}
+
+html {
+  background-color: #1f1f24 !important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.35s ease;
+}
+.fade-enter-from,
+.fade-leave-active {
+  opacity: 0;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  overflow: overlay;
+}
+:root {
+  color-scheme: dark;
+}
