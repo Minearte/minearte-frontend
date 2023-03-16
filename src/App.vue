@@ -1,4 +1,9 @@
+<script setup lang="ts">
+import NavBar from './components/NavBar.vue'
+</script>
+
 <template>
+  <NavBar></NavBar>
   <div class="content">
     <router-view v-slot="{ Component, route }">
       <transition name="fade" mode="out-in">
