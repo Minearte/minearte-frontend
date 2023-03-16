@@ -8,4 +8,9 @@ export default interface lang {
         rules?: string
         discord?: string
     }
+    hero?: {
+        title?: string
+        subtitle?: string
+        button?: string
+    }
 }
