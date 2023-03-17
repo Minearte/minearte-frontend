@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import router from './router'
 import * as lang from './lang/defaults'
 import './assets/css/main.css'
+
 const app:any = createApp(App)
 app.use(Vuesax)
 app.use(router)
