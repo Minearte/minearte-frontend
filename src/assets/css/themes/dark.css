@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #212121;
+    --color-secondary: #424242;
+    --color-tertiary: #616161;
+    --color-quaternary: #757575;
+    --color-quinary: #9e9e9e;
+    --button-color: #212121;
+    --button-color-hover: #424242;
+    --button-color-active: #616161;
+    --button-color-disabled: #757575;
+    --button-color-text: #9e9e9e;
+    --text-main: #ffffff;
+    --text-secondary: #ffffff;
+    --text-tertiary: #ffffff;
+}
+

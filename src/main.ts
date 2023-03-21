@@ -5,6 +5,9 @@ import Vuesax from 'vuesax3'
 import 'vuesax3/dist/vuesax.css'
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "boxicons";
+import "boxicons/css/boxicons.min.css";
+
 // App modules
 import router from './router'
 import * as lang from './lang/defaults'

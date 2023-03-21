@@ -42,6 +42,22 @@
           </li>
 
         </ul>
+
+        <ul class="navbar-nav d-lg-block">
+          <li class="nav-item">
+          <div class="con-switch">
+            <vs-switch color="#212121" v-model="dark" >
+              <template #on>
+                <i class='bx bxs-moon'></i>
+              </template>
+
+              <template #off>
+                <i class='bx bxs-sun'></i>
+              </template>
+            </vs-switch>        
+          </div>
+          </li>
+        </ul>
       </div>
     </span>
   </nav>
@@ -56,7 +72,13 @@ export default {
   },
   data: () => ({
     lang: es,
+    dark: true,
   }),
+  methods: {
+    toggleDark() {
+      this.dark = !this.dark;
+    },
+  },
 };
 </script>
 <style scoped>
