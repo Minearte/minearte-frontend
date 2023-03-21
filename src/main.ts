@@ -7,7 +7,6 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "boxicons";
 import "boxicons/css/boxicons.min.css";
-
 // App modules
 import router from './router'
 import * as lang from './lang/defaults'
@@ -19,3 +18,4 @@ app.use(router)
 app.config.globalProperties.$lang = lang.es
 app.mount('#app')
 
+export default app;
