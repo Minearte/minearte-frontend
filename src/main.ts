@@ -11,6 +11,10 @@ import "boxicons/css/boxicons.min.css";
 import router from './router'
 import * as lang from './lang/defaults'
 import './assets/css/main.css'
+import './ts/notiflix'
+// Themes
+import './assets/css/themes/default.css'
+import './assets/css/themes/dark.css'
 
 const app:any = createApp(App)
 app.use(Vuesax)

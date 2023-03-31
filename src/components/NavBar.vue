@@ -46,15 +46,7 @@
         <ul class="navbar-nav d-lg-block">
           <li class="nav-item">
           <div class="con-switch">
-            <vs-switch color="#212121" v-model="dark" >
-              <template #on>
-                <i class='bx bxs-moon'></i>
-              </template>
-
-              <template #off>
-                <i class='bx bxs-sun'></i>
-              </template>
-            </vs-switch>        
+            <ThemeButton />  
           </div>
           </li>
         </ul>
@@ -65,11 +57,13 @@
 <script lang="ts">
 import { RouterLink } from "vue-router";
 import { es } from "../lang/defaults";
+import ThemeButton from "./ThemeButton.vue";
 export default {
   name: "NavBar",
   components: {
     RouterLink,
-  },
+    ThemeButton
+},
   data: () => ({
     lang: es,
     dark: true,

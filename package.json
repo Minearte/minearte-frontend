@@ -14,6 +14,7 @@
     "axios": "^1.3.4",
     "bootstrap": "^5.2.3",
     "boxicons": "^2.1.4",
+    "notiflix": "^3.2.6",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",
     "vuesax3": "^4.1.1"
