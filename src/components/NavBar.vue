@@ -80,7 +80,7 @@ export default {
   border-radius: 40px;
 }
 ul {
-  color: white !important;
+  color: var(--text-main) !important;
 }
 .navbar {
   /* From https://css.glass */

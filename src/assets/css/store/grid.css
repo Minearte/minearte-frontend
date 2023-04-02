@@ -1,0 +1,19 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.main {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.sidebar {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+
+@media (max-width: 768px) {
+    
+}

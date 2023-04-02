@@ -8,5 +8,3 @@ notiflix.Report.init({
     }
 
 });
-
-notiflix.Report.success('Success', 'This is a success message.', 'OK');

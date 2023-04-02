@@ -10,7 +10,9 @@ export default interface lang {
     }
     hero?: {
         title?: string
-        subtitle?: string
+        subtitle?: string,
+        subtitle2?: string,
+        copyIp?: string,
         button?: string
     }
 }

@@ -4,6 +4,18 @@ import NavBar from './components/NavBar.vue'
 
 <template>
   <NavBar></NavBar>
+  <section class="stars">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </section>
   <div class="content">
     <router-view v-slot="{ Component, route }">
       <transition name="fade" mode="out-in">
@@ -25,6 +37,6 @@ export default defineComponent({
 })
 </script>
 
-<style>
-
+<style scoped>
+@import "./assets/css/stars.css";
 </style>

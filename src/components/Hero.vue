@@ -1,41 +1,37 @@
 <template>
-  <div class="hero row">
-    <div class="col-lg-6 d-flex flex-column justify-content-center">
+  <div class="parent">
+    <div class="div1 d-flex flex-column justify-content-center">
       <h1>{{ lang.hero?.title }}</h1>
-      <p>{{ lang.hero?.subtitle }}</p>
+      <p>{{ lang.hero?.subtitle }} </p>
+      <vs-button :active="active == 0" @click="handleCopyIP()">
+        <i class='bx bx-network-chart'></i> {{ lang.hero?.copyIp }}
+      </vs-button>
     </div>
-    <div class="col-lg-6 hero-img aos-init aos-animate">
+    <div class="div2 hero-img aos-init aos-animate">
       <img src="/src/assets/logo.png" width="546" height="546" alt="" class="img-fluid">
     </div>
-
   </div>
 </template>
 
 <script lang="ts">
 import { es } from '../lang/defaults';
+import Notiflix from 'notiflix';
+
 export default {
   data: () => ({
     lang: es,
+    active: 0,
+    serverCount: 0,
   }),
-};
+  methods: {
+    async handleCopyIP() {
+      await navigator.clipboard.writeText('mc.minearte.net');
+      Notiflix.Report.success('¡Éxito!', '¡IP copiada al portapapeles!', 'Ok');
+    },
+  }
+}
 </script>
 
 <style scoped>
-.hero {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-}
-
-.hero h1 {
-  font-size: 32px;
-  font-weight: 200;
-  margin: 0;
-  padding: 0;
-}
-
-.hero p {
-  font-size: 25px;
-  font-weight: 200;
-  padding: 0;
-}
+@import url('../assets/css/hero.css');
 </style>
