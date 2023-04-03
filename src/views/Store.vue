@@ -1,6 +1,6 @@
 <template>
     <div>
-        Welcome to mineart store
+        
     </div>
 </template>
 

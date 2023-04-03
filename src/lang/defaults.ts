@@ -8,7 +8,8 @@ export const es:lang = {
         "home": "Inicio",
         "about": "Acerca de",
         "rules": "Reglas",
-        "discord": "Discord"
+        "discord": "Discord",
+        "store": "Tienda"
     },
     "hero": {
         "title": "Minearte Network",

@@ -41,6 +41,17 @@
             </RouterLink>
           </li>
 
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <RouterLink
+              role="button"
+              style="text-decoration: none; color: inherit"
+              class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+              to="/tienda"
+            >
+              {{ lang.navbar?.store }}
+            </RouterLink>
+          </li>
+
         </ul>
 
         <ul class="navbar-nav d-lg-block">
@@ -83,20 +94,17 @@ ul {
   color: var(--text-main) !important;
 }
 .navbar {
-  /* From https://css.glass */
-  background: rgba(45, 45, 45, 0.18);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+
 .navbar-toggler {
-    float: left;
-    border-radius: 0%;
-    border-color: transparent;
-    box-shadow: none;
-    border: none;
-    filter: invert(1000);
+  float: left;
+  border-radius: 0%;
+  border-color: transparent;
+  box-shadow: none;
+  border: none;
+  filter: invert(var(--invert));
 }
 nav {
   color: white;

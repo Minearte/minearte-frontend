@@ -7,6 +7,7 @@ export default interface lang {
         about?: string
         rules?: string
         discord?: string
+        store?: string
     }
     hero?: {
         title?: string
