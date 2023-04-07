@@ -2,6 +2,7 @@
     <div>
         <img :src="link" alt="">
         <span> {{ nickname }} </span>
+        <span class="gray"> ( {{ package }} )</span>
     </div>
 
 </template>
@@ -14,6 +15,10 @@ export default {
             type: String,
             required: true
         },
+        package : {
+            type: String,
+            required: true
+        }
     },
     data() {
         return {
@@ -34,4 +39,9 @@ img {
     margin-right: 20px;
     margin-left: 20px;
 }
+.gray {
+    color: #808080;
+    font-size: 12px;
+}
+
 </style>

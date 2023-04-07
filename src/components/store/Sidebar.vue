@@ -5,7 +5,7 @@
     </div>
     <div class="content">
       <div v-for="item in sales">
-        <PlayerRow :nickname="item.player" />
+        <PlayerRow :nickname="item.player" :package="item.package"/>
       </div>
     </div>
   </div>
