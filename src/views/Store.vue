@@ -1,5 +1,12 @@
 <template>
+    <div class="navbar-parent">
+        <div class="nav">
+            <StoreNav />
+        </div>
+    </div>
+
     <div class="parent">
+
         <div class="main">
             <RouterView />
         </div>
@@ -11,9 +18,11 @@
 
 <script lang="ts">
 import Sidebar from '../components/store/Sidebar.vue';
+import StoreNav from '../components/store/StoreNav.vue';
 export default {
     components: {
-        Sidebar
+        Sidebar,
+        StoreNav
     }
 }
 </script>

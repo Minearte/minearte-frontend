@@ -15,6 +15,16 @@
   margin: 10px;
 }
 
+.navbar-parent {
+  display: grid; 
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". nav nav nav ."; 
+}
+.nav { grid-area: nav; }
+
 @media (max-width: 1400px) {
   .parent {
     grid-template-columns: 1fr 1fr 1fr;
@@ -31,3 +41,5 @@
       "sidebar";
   }
 }
+
+
