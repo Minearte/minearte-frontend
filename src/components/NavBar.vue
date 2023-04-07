@@ -4,7 +4,7 @@
   >
     <span class="container-fluid px-0">
     <RouterLink to="/">
-        <img class="d-block d-lg-none align-self-start" :src="lang.navbar?.imgURL" :alt="lang.navbar?.imgAlt" width="45" height="45">
+        <img class="d-block d-lg-none align-self-start" src="/src/assets/logo.png" :alt="lang.navbar?.imgAlt" width="45" height="45">
     </RouterLink>
 
       <button
