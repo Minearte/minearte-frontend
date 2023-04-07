@@ -1,6 +1,8 @@
 import * as Config from './interfaces'
 
 export const backend:Config.backend = {
-    url: 'https://api.minearte.net',
-    port: 443
+    url: 'http://localhost',
+    port: 4000,
 }
+
+export default backend;
