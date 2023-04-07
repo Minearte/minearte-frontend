@@ -1,19 +1,33 @@
 .parent {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  margin: 20px;
+  grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  gap: 0px 0px;
+  grid-template-areas: ". main main sidebar .";
 }
-
 .main {
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: main;
+  margin: 10px;
 }
 .sidebar {
-  grid-area: 1 / 4 / 2 / 5;
+  grid-area: sidebar;
+  margin: 10px;
 }
 
+@media (max-width: 1400px) {
+  .parent {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "main main sidebar";
+  }
+}
 
-@media (max-width: 768px) {
-    
+@media (max-width: 800px) {
+  .parent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "main"
+      "sidebar";
+  }
 }

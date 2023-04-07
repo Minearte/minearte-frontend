@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation"
       >
       <RouterLink to="/">
-        <img class="d-none d-lg-block" :src="lang.navbar?.imgURL" :alt="lang.navbar?.imgAlt" width="45" height="45">
+        <img class="d-none d-lg-block" src="/src/assets/logo.png" :alt="lang.navbar?.imgAlt" width="45" height="45">
       </RouterLink>
 
         <ul class="navbar-nav navbar-nav-hover mx-auto">

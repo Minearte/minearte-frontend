@@ -9,8 +9,14 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/tienda',
         name: 'Tienda',
-        component: () => import('../views/Store.vue')
-        
+        component: () => import('../views/Store.vue'),
+        children: [
+            {
+                path: '',
+                name: 'home',
+                component: () => import('../components/store/Welcome.vue')
+            },
+        ]   
     }
 ]
 

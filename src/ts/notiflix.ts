@@ -6,5 +6,4 @@ notiflix.Report.init({
         messageColor: 'var(--text-main)',
         titleColor: 'var(--text-main)',
     }
-
 });
