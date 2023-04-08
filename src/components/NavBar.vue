@@ -8,7 +8,7 @@
     </RouterLink>
 
       <button
-        class="navbar-toggler shadow-none ms-md-2"
+        class="navbar-toggler shadow-none ms-md-2 collapsed"
         id="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"

@@ -37,8 +37,8 @@ export default defineComponent({
   watch: {
     $route() {
       var navButton = document.getElementById("navbar-toggler");
-
       let width = window.innerWidth;
+
 
       if (width > 990) {
         return;
@@ -47,11 +47,13 @@ export default defineComponent({
       if (this.$route.path.startsWith("/tienda/c") || this.$route.path.startsWith("/tienda/p")){
         return;
       }
+      if(!navButton) return;
+      
+      var isClosed = navButton?.classList.contains("collapsed");
 
-      if (navButton) {
-        console.log(this.$route);
-        navButton.click();
-      }
+      if(isClosed) return;
+        
+      navButton?.click();
     },
   },
 });
