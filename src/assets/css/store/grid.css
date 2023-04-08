@@ -32,10 +32,13 @@
   }
 
   .navbar-parent {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "nav nav nav";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav nav nav nav nav";
     margin: 10px;
   }
+
+  .nav { grid-area: nav; }
+
 }
 
 @media (max-width: 800px) {

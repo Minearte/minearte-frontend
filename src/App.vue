@@ -37,7 +37,19 @@ export default defineComponent({
   watch: {
     $route() {
       var navButton = document.getElementById("navbar-toggler");
+
+      let width = window.innerWidth;
+
+      if (width > 990) {
+        return;
+      }
+
+      if (this.$route.path.startsWith("/tienda/c") || this.$route.path.startsWith("/tienda/p")){
+        return;
+      }
+
       if (navButton) {
+        console.log(this.$route);
         navButton.click();
       }
     },

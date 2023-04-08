@@ -18,7 +18,7 @@ export default {
     },
     data() {
         return {
-            link: "/tienda/p/" + this.packageID
+            link: "/tienda/c/" + this.packageID
         }
     },
 }

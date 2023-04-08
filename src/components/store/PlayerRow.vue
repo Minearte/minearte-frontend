@@ -38,6 +38,7 @@ img {
     height: 30px;
     margin-right: 20px;
     margin-left: 20px;
+    margin-bottom: 5px;
 }
 .gray {
     color: #808080;

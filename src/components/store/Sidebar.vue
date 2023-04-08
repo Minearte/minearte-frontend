@@ -10,7 +10,7 @@
     </div>
   </div>
 
-  <div class="card-contaier">
+  <div class="card-contaier info">
     <div class="card-header">
       <h4>Información</h4>
     </div>

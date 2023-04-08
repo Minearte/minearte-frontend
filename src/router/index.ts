@@ -17,6 +17,18 @@ const routes: RouteRecordRaw[] = [
                 component: () => import('../components/store/Welcome.vue')
             },
         ]   
+    },
+    {
+        path: '/tienda/c/:category',
+        name: 'Category',
+        component: () => import('../views/Store.vue'),
+        children: [
+            {
+                path: '',
+                name: 'category',
+                component: () => import('../components/store/Category.vue')
+            },
+        ]
     }
 ]
 
