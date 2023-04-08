@@ -9,6 +9,7 @@
 
       <button
         class="navbar-toggler shadow-none ms-md-2"
+        id="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navigation"

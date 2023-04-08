@@ -2,7 +2,7 @@
     <div>
         <img :src="link" alt="">
         <span> {{ nickname }} </span>
-        <span class="gray"> ( {{ package }} )</span>
+        <span class="gray">{{ package }}</span>
     </div>
 
 </template>
@@ -42,6 +42,7 @@ img {
 .gray {
     color: #808080;
     font-size: 12px;
+    margin-left: 4px;
 }
 
 </style>

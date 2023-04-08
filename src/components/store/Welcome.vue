@@ -6,7 +6,7 @@
         <div class="panel-body">
           <p></p>
           <p style="text-align: center">
-            <span style="font-size: 18px"
+            <span
               ><u
                 >¡<strong>Bienvenido</strong> a la tienda oficial de
                 <strong>Minearte Network</strong>!</u
@@ -40,12 +40,10 @@
               target="_blank"
               rel="noreferrer noopener"
               ><img
-                style="max-width: 385px; width: 385px; height: 131px"
+                style="max-width: 180px;"
                 src="https://cdn.discordapp.com/attachments/863801106756009984/1010912377795006474/image-removebg-preview.png"
                 alt="Discord de Minearte"
                 class="fr-fic fr-dii"
-                width="385"
-                height="131"
             /></a>
           </p>
           <p style="text-align: center">
@@ -66,8 +64,6 @@
                 src="https://www.40servidoresmc.es/img/botonvota.png"
                 alt="Servidores de Minecraft 40servidoresM., Vota por Minearte Network"
                 class="fr-fic fr-dii"
-                width="160"
-                height="64"
             /></a>
           </p>
           <p><br /></p>
@@ -84,4 +80,5 @@ export default {};
 
 <style scoped>
 @import "../../assets/css/store/card.css";
+
 </style>

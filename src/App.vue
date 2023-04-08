@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import NavBar from './components/NavBar.vue'
+import NavBar from "./components/NavBar.vue";
 </script>
 
 <template>
@@ -28,13 +28,21 @@ import NavBar from './components/NavBar.vue'
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  data:() => ({
-    active: 0
-  })
-})
+  data: () => ({
+    active: 0,
+  }),
+  watch: {
+    $route() {
+      var navButton = document.getElementById("navbar-toggler");
+      if (navButton) {
+        navButton.click();
+      }
+    },
+  },
+});
 </script>
 
 <style scoped>
