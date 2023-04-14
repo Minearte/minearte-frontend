@@ -1,9 +1,21 @@
 <script setup lang="ts">
-import NavBar from './components/NavBar.vue'
+import NavBar from "./components/NavBar.vue";
 </script>
 
 <template>
   <NavBar></NavBar>
+  <section class="stars">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </section>
   <div class="content">
     <router-view v-slot="{ Component, route }">
       <transition name="fade" mode="out-in">
@@ -16,15 +28,35 @@ import NavBar from './components/NavBar.vue'
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  data:() => ({
-    active: 0
-  })
-})
+  data: () => ({
+    active: 0,
+  }),
+  watch: {
+    $route() {
+      var navButton = document.getElementById("navbar-toggler");
+
+      let width = window.innerWidth;
+
+      if (width > 990) {
+        return;
+      }
+
+      if (this.$route.path.startsWith("/tienda/c") || this.$route.path.startsWith("/tienda/p")){
+        return;
+      }
+
+      if (navButton) {
+        console.log(this.$route);
+        navButton.click();
+      }
+    },
+  },
+});
 </script>
 
-<style>
-
+<style scoped>
+@import "./assets/css/stars.css";
 </style>

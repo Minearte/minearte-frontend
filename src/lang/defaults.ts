@@ -8,11 +8,14 @@ export const es:lang = {
         "home": "Inicio",
         "about": "Acerca de",
         "rules": "Reglas",
-        "discord": "Discord"
+        "discord": "Discord",
+        "store": "Tienda"
     },
     "hero": {
         "title": "Minearte Network",
         "subtitle": "¿Buscas un nuevo servidor donde jugar? Te invitamos a probar Minearte, estamos seguros de que te gustará.",
+        "subtitle2": " Juega junto a: %playerCount% jugadores!",
+        "copyIp": "Copiar IP",
         "button": "Leer más"
     }
 }

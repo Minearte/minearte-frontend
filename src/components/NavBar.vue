@@ -4,11 +4,12 @@
   >
     <span class="container-fluid px-0">
     <RouterLink to="/">
-        <img class="d-block d-lg-none align-self-start" :src="lang.navbar?.imgURL" :alt="lang.navbar?.imgAlt" width="45" height="45">
+        <img class="d-block d-lg-none align-self-start" src="/src/assets/logo.png" :alt="lang.navbar?.imgAlt" width="45" height="45">
     </RouterLink>
 
       <button
         class="navbar-toggler shadow-none ms-md-2"
+        id="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navigation"
@@ -26,7 +27,7 @@
       <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation"
       >
       <RouterLink to="/">
-        <img class="d-none d-lg-block" :src="lang.navbar?.imgURL" :alt="lang.navbar?.imgAlt" width="45" height="45">
+        <img class="d-none d-lg-block" src="/src/assets/logo.png" :alt="lang.navbar?.imgAlt" width="45" height="45">
       </RouterLink>
 
         <ul class="navbar-nav navbar-nav-hover mx-auto">
@@ -38,6 +39,17 @@
               to="/"
             >
               {{ lang.navbar?.home }}
+            </RouterLink>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <RouterLink
+              role="button"
+              style="text-decoration: none; color: inherit"
+              class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+              to="/tienda"
+            >
+              {{ lang.navbar?.store }}
             </RouterLink>
           </li>
 
@@ -80,23 +92,20 @@ export default {
   border-radius: 40px;
 }
 ul {
-  color: white !important;
+  color: var(--text-main) !important;
 }
 .navbar {
-  /* From https://css.glass */
-  background: rgba(45, 45, 45, 0.18);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+
 .navbar-toggler {
-    float: left;
-    border-radius: 0%;
-    border-color: transparent;
-    box-shadow: none;
-    border: none;
-    filter: invert(1000);
+  float: left;
+  border-radius: 0%;
+  border-color: transparent;
+  box-shadow: none;
+  border: none;
+  filter: invert(var(--invert));
 }
 nav {
   color: white;

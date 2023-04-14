@@ -1,23 +1,8 @@
 <template>
-  <div>
-    <input
-      @change="toggleTheme"
-      id="checkbox"
-      type="checkbox"
-      class="switch-checkbox"
-    />
-    <label for="checkbox" class="switch-label">
-      <span>🌙</span>
-      <span>☀️</span>
-      <div
-        class="switch-toggle"
-        :class="{ 'switch-toggle-checked': userTheme === 'dark-theme' }"
-      ></div>
-    </label>
-  </div>
-  <vs-switch color="#212121" v-model="dark" @click="toggleTheme">
+  <vs-switch color="#212121" v-model="dark">
     <template #on>
       <i class="bx bxs-moon"></i>
+
     </template>
     <template #off>
       <i class="bx bxs-sun"></i>
@@ -35,10 +20,18 @@ export default {
   data() {
     return {
       userTheme: "light-theme",
-      dark: false,
+      dark: this.getTheme() === "dark-theme",
     };
   },
-
+  watch: {
+    dark() {
+      if (this.dark) {
+        this.setTheme("dark-theme");
+      } else {
+        this.setTheme("light-theme");
+      }
+    },
+  },
   methods: {
     toggleTheme() {
       const activeTheme = localStorage.getItem("user-theme");
@@ -50,7 +43,7 @@ export default {
     },
 
     getTheme(): string {
-      return localStorage.getItem("user-theme") || "light-theme";
+      return localStorage.getItem("user-theme") || this.getMediaPreference();
     },
 
     setTheme(theme: string) {

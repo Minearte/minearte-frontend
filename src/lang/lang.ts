@@ -7,10 +7,13 @@ export default interface lang {
         about?: string
         rules?: string
         discord?: string
+        store?: string
     }
     hero?: {
         title?: string
-        subtitle?: string
+        subtitle?: string,
+        subtitle2?: string,
+        copyIp?: string,
         button?: string
     }
 }

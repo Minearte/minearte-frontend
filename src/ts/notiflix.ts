@@ -6,7 +6,4 @@ notiflix.Report.init({
         messageColor: 'var(--text-main)',
         titleColor: 'var(--text-main)',
     }
-
 });
-
-notiflix.Report.success('Success', 'This is a success message.', 'OK');
