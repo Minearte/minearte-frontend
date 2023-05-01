@@ -39,7 +39,6 @@ import Sweatalert from "sweetalert2";
 export default {
   props: {
     img: {
-      type: String,
       default: "",
       required: true,
     },
@@ -84,7 +83,7 @@ export default {
           } else {
             Loading.dots("Conectando con Tebex...");
 						api.post("store/checkout", {
-              packageID: "5412971",
+              packageID: this.id,
 							username: username,
             }).then((res) => {
 							Loading.remove();
