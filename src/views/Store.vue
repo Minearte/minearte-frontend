@@ -6,10 +6,10 @@
     </div>
 
     <div class="parent">
-
         <div class="main">
             <RouterView />
         </div>
+        
         <div class="sidebar">
             <Sidebar />
         </div>

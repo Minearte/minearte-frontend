@@ -61,4 +61,31 @@ export default defineComponent({
 
 <style scoped>
 @import "./assets/css/stars.css";
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.35s ease;
+}
+.fade-enter-from,
+.fade-leave-active {
+  opacity: 0;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 </style>
