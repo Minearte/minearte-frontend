@@ -2,7 +2,7 @@
   <div class="contenedor">
     <div v-for="item in packageArray" class="caja" :key="item.id">
       <Package
-        :img="item.img"
+        :img="item.image"
         :name="item.name"
         :description="item.description"
         :id="item.id"
@@ -13,7 +13,7 @@
   </div>
 </template>
 <script lang="ts">
-import { packages } from "../../requests/interfaces/package";
+import { serverPackage } from "../../requests/interfaces/package";
 import api from "../../ts/api";
 import Package from "./Package.vue";
 
@@ -24,7 +24,7 @@ export default {
   data: () => ({
     category: "",
     packagesID: [] as number[],
-    packageArray: [] as packages[],
+    packageArray: [] as serverPackage[],
   }),
   mounted() {
     this.mount();
