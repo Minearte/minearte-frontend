@@ -1,0 +1,15 @@
+{
+    "project": "Minearte Web",
+    "baseHtmlPath": "./dist/index.html",
+    "distPath": "./dist/",
+    "routes": [{
+        "name": "home",
+        "path": "/",
+        "description": "Bienvenido a la pagina web oficial de Minearte Network!Aqui puedes encontrar cosas como la tienda, normas etc"
+    },
+    {
+        "name": "Tienda",
+        "path": "/tienda",
+        "description": "Bienvenido a la tienda de Minearte Network! Aqui puedes comprar rangos, items, etc"
+    }]
+}

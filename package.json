@@ -6,7 +6,7 @@
   "license": "GNU General Public License v3.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build && cp dist/index.html dist/404.html",
+    "build": "vue-tsc && vite build && cp dist/index.html dist/404.html && metacsr -v --config metacsr.json",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "@types/node": "^18.15.11",
     "@vitejs/plugin-vue": "^4.1.0",
     "autoprefixer": "^10.4.14",
+    "metacsr-generator": "^1.0.2",
     "node-sass": "^8.0.0",
     "postcss": "^8.4.21",
     "sass": "^1.61.0",
