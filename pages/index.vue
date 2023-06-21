@@ -6,6 +6,6 @@ const { t } = useI18n()
 
 <template>
     <div>
-        {{ t('welcome') }}
+        
     </div>
 </template>
