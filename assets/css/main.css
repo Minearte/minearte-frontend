@@ -1,0 +1,8 @@
+.text-shadow:hover {
+    text-shadow: 0 0 10px rgb(253 186 116 / 1);
+    filter: drop-shadow(0px 0px 2px theme('colors.orange.300'));
+}
+
+.text-shadow {
+    transition: all 0.2s ease-in-out;
+}

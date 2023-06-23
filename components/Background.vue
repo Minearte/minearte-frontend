@@ -9,7 +9,7 @@
 <style>
 body {
   background-color: #ffaa00;
-  background-image: url("../assets/backgrounds/red-circles-dark.svg");
+  background-image: url("../assets/backgrounds/darks/side-waves-orange-dark.svg");
   background-attachment: fixed;
   background-size: cover;
 }
