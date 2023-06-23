@@ -23,7 +23,7 @@ useHead({
 
 <template>
   <div>
-    <Triplezone />
+    <HeaderTriplezone />
   </div>
 </template>
 
