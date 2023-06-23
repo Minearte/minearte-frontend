@@ -15,6 +15,7 @@ export default defineI18nConfig(() => ({
       loading: "Cargando...",
       discord: "Servidor de Discord",
       clickToJoin: "Click para unirte",
+      ipCopied: "IP copiada al portapapeles",
     },
   },
 }));

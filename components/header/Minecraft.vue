@@ -1,16 +1,17 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
-const { t } = useI18n(); 
+import {Icon} from "@iconify/vue";
+
+const {t} = useI18n();
 
 </script>
 
 <template>
-  <div class="text-shadow">
+  <div @click="copyIp(t('ipCopied'))" class="text-shadow cursor-pointer">
     <div class="grid grid-cols-1 float-left">
       <p class="text-center bg-orange-300 rounded-xl mx-1"> {{ playerCount }}</p>
       <Icon
-        icon="mdi:minecraft"
-        class="text-orange-300 text-5xl hover:shadow-2xl text-shadow mt-2"
+          icon="mdi:minecraft"
+          class="text-orange-300 text-5xl hover:shadow-2xl text-shadow mt-2"
       />
     </div>
 
@@ -23,31 +24,36 @@ const { t } = useI18n();
 
 <script lang="ts">
 import constants from "~/Constants";
+import { Notify } from "notiflix";
 
 interface playerCount {
-    players: {
-        online: number
-    }
+  players: {
+    online: number
+  }
 }
 
 export default defineComponent({
-    data() {
-        return {
-            playerCount: "...",
-        }
-    },
-    methods: {
-        async getPlayerCount() {
-            const data = await fetch('https://api.mcsrvstat.us/2/' + constants.SERVER_IP)
+  data() {
+    return {
+      playerCount: "...",
+    }
+  },
+  methods: {
+    async getPlayerCount() {
+      const data = await fetch('https://api.mcsrvstat.us/2/' + constants.SERVER_IP)
 
-            const playerCount = data.json() as Promise<playerCount>
+      const playerCount = data.json() as Promise<playerCount>
 
-            this.playerCount =  (await playerCount).players.online.toString();
-        },
+      this.playerCount = (await playerCount).players.online.toString();
     },
-    mounted() {
-        this.getPlayerCount()
-    },
+    async copyIp(message: string) {
+      await navigator.clipboard.writeText(constants.SERVER_IP)
+      Notify.success(message)
+    }
+  },
+  mounted() {
+    this.getPlayerCount()
+  },
 })
 </script>
 
