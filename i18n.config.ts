@@ -13,6 +13,8 @@ export default defineI18nConfig(() => ({
       ip: "mc.minearte.net",
       clickToCopy: "Click para copiar",
       loading: "Cargando...",
+      discord: "Servidor de Discord",
+      clickToJoin: "Click para unirte",
     },
   },
 }));
