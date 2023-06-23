@@ -22,6 +22,8 @@ const { t } = useI18n();
 </template>
 
 <script lang="ts">
+import constants from "~/Constants";
+
 interface playerCount {
     players: {
         online: number
@@ -36,7 +38,7 @@ export default defineComponent({
     },
     methods: {
         async getPlayerCount() {
-            const data = await fetch('https://api.mcsrvstat.us/2/mc.minearte.net')
+            const data = await fetch('https://api.mcsrvstat.us/2/' + constants.SERVER_IP)
 
             const playerCount = data.json() as Promise<playerCount>
 
