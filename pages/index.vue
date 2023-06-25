@@ -13,10 +13,6 @@ useHead({
         name: "keywords",
         content: t("meta.keywords"),
     },
-    {
-        name: "icon",
-        content: "../assets/logo.png",
-    }
   ],
 });
 </script>
