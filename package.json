@@ -14,6 +14,7 @@
     "@nuxtjs/i18n": "^8.0.0-beta.12",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18",
+    "flowbite": "^1.6.6",
     "notiflix": "^3.2.6",
     "nuxt": "^3.5.2"
   },
