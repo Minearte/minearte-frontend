@@ -1,12 +1,14 @@
 <template>
   <div>
     <LoadingSpinner />
-    <Background>
-      <NavBar />
-      <NuxtLoadingIndicator />
-      <HeaderTriplezone />
-      <NuxtPage />
-    </Background>
+    <nuxt-layout>
+      <Background>
+        <NavBar />
+        <NuxtLoadingIndicator />
+        <HeaderTriplezone />
+        <NuxtPage />
+      </Background>
+    </nuxt-layout>
   </div>
 </template>
 
