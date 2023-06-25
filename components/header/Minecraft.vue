@@ -54,6 +54,16 @@ export default defineComponent({
   },
   mounted() {
     this.getPlayerCount()
+
+    Notify.init({
+      position: "right-bottom",
+      success: {
+        background: "#010A11",
+        textColor: "#fff",
+        fontAwesomeIconColor: "#FDBA74",
+        notiflixIconColor: "#FDBA74",
+      }
+    })
   },
 })
 </script>
