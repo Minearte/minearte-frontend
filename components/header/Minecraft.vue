@@ -24,7 +24,8 @@ const {t} = useI18n();
 
 <script lang="ts">
 import constants from "~/Constants";
-import { Notify } from "notiflix";
+import Notiflix from "notiflix";
+const { Notify } = Notiflix;
 
 interface playerCount {
   players: {
