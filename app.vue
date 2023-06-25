@@ -1,5 +1,6 @@
 <template>
   <div>
+    <LoadingSpinner />
     <Background>
       <NavBar />
       <NuxtLoadingIndicator />
