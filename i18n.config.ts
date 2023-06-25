@@ -16,6 +16,13 @@ export default defineI18nConfig(() => ({
       discord: "Servidor de Discord",
       clickToJoin: "Click para unirte",
       ipCopied: "IP copiada al portapapeles",
+      pageName: "Minearte Network",
+      nav: {
+        home: "Inicio",
+        store: "Tienda",
+        discord: "Discord",
+        rules: "Reglas",
+      }
     },
   },
 }));
