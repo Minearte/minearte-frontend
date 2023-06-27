@@ -22,6 +22,21 @@ export default defineI18nConfig(() => ({
         store: "Tienda",
         discord: "Discord",
         rules: "Reglas",
+      },
+      store: {
+        meta: {
+          title: "Tienda | Minearte Network",
+          description: "Tienda de Minearte Network, donde podras comprar rangos y mas tanto para box pvp como survival!",
+          keywords: "Tienda, Minearte, Network"
+        },
+        nav: {
+          home: "Inicio",
+        },
+        index: {
+          header: 'Bienvenido a la tienda de Minearte Network',
+          subheader: 'Aqui podras comprar rangos y mas tanto para box pvp como survival!',
+        },
+        goTo: "Ir a la seccion: ",
       }
     },
   },

@@ -1,9 +1,12 @@
 import type {Config} from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
 
 export default <Partial<Config>>{
     theme: {
-        extend: defaultTheme,
+        colors: {
+            gray: {
+                950: '#09121a',
+            }
+        },
     },
     plugins: [
         require('flowbite/plugin'),

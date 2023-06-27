@@ -1,6 +1,6 @@
 <template>
   <span v-if="loading" class="hider flex items-center">
-      <span class="loader"></span>
+      <span class="loader" />
   </span>
 </template>
 

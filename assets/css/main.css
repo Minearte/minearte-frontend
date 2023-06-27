@@ -6,3 +6,10 @@
 .text-shadow {
     transition: all 0.2s ease-in-out;
 }
+
+.blur-white {
+    background: rgba(0, 0, 0, 0.10);
+    border-radius: 16px;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
