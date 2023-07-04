@@ -1,5 +1,6 @@
 <template>
   <div>
+    <LoadingSpinner />
     <nuxt-layout>
       <Background>
         <NavBar />
