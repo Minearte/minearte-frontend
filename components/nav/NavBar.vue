@@ -19,7 +19,7 @@ const {t} = useI18n();
           <NavItem langKey="nav.home" icon="bx:bx-home" link="/" />
           <NavItem langKey="nav.store" icon="mdi:cart-outline" link="/tienda" />
           <NavItem langKey="nav.discord" icon="ic:baseline-discord" link="https://discord.minearte.net" target="_blank" />
-          <NavItem langKey="nav.rules" icon="bx:bx-book" link="/reglas" />
+          <NavItem langKey="nav.rules" icon="bx:bx-book" link="https://wiki.minearte.net/" target="_blank" />
         </ul>
       </div>
     </div>
