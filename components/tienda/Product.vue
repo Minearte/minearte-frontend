@@ -36,6 +36,9 @@ import {defineComponent} from 'vue'
 import {Confirm, Report, Swal} from '~/notifications/Notiflix'
 import Axios from "axios";
 import Constants from "~/Constants";
+import Notiflix from 'notiflix'
+
+const load = Notiflix.Loading;
 
 export default defineComponent({
   props: {
@@ -73,10 +76,12 @@ export default defineComponent({
       );
     },
     async buy(username: string) {
+      load.dots()
       await Axios.post(Constants.API_URL_PROD + 'store/checkout', {
         packageID: this.id,
         username: username
       }).then((response) => {
+        load.remove()
         if (response.data.url == "") {
           Report.failure(this.$t('store.redirectingToTebex.error'), "", this.$t('store.redirectingToTebex.confirm'));
           return;
