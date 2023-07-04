@@ -36,7 +36,23 @@ export default defineI18nConfig(() => ({
           header: 'Bienvenido a la tienda de Minearte Network',
           subheader: 'Aqui podras comprar rangos y mas tanto para box pvp como survival!',
         },
+        category: {
+          goBack: "Volver",
+          buy: "Comprar",
+          description: "Descripcion",
+        },
         goTo: "Ir a la seccion: ",
+        buyPrompt: {
+          title: "Introduce tu nombre de usuario",
+          placeholder: "username",
+          confirm: "Comprar",
+          cancel: "Cancelar",
+        },
+        redirectingToTebex: {
+          title: "Redireccionando a Tebex.",
+          error: "Error al redireccionar a Tebex.",
+          confirm: "Okey",
+        }
       }
     },
   },

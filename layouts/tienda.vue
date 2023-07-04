@@ -19,6 +19,10 @@ import {defineComponent} from "vue";
 import ICategories from "~/interfaces/ICategories";
 import Constants from "~/Constants";
 import Axios from "axios";
+import Notiflix from 'notiflix'
+
+const load = Notiflix.Loading;
+
 export default defineComponent({
   data() {
     return {
@@ -26,12 +30,18 @@ export default defineComponent({
     }
   },
   mounted() {
-    this.mounted();
+    this.mounted().finally(() => {
+      load.remove()
+    })
   },
   methods: {
     async mounted() {
+      load.init({
+        svgColor: '#fc683f',
+      })
+      load.dots();
       this.categories = [];
-      Axios.get(Constants.API_URL_PROD + 'store/categories').then((response) => {
+      await Axios.get(Constants.API_URL_PROD + 'store/categories').then((response) => {
         this.categories = response.data;
       });
     },
