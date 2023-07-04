@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <div class="w-full max-w-sm border rounded-lg shadow bg-gray-950 border-gray-700">
     <div v-if="image">
-      <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+      <img class="p-8 rounded-t-lg" :src="this.image" alt="product image" />
     </div>
     <div class="px-5 pb-5">
       <a href="#">
@@ -26,7 +26,6 @@ export default defineComponent({
       required: true
     },
     image: {
-      type: String,
       required: false
     },
     id: {
