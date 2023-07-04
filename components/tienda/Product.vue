@@ -18,7 +18,7 @@ const tIln = computed(() => {
 
       <div class="flex items-center justify-between mt-3">
         <span class="text-3xl font-bold text-gray-900 dark:text-white">{{ price }} €</span>
-        <TiendaButton :text="t('store.category.description')"/>
+        <TiendaButton @click="viewDescription" :text="t('store.category.description')"/>
         <TiendaButton
             @click="
              buyAsk(t('store.buyPrompt.title'),
@@ -33,7 +33,7 @@ const tIln = computed(() => {
 
 <script lang="ts">
 import {defineComponent} from 'vue'
-import {Confirm, Report} from '~/notifications/Notiflix'
+import {Confirm, Report, Swal} from '~/notifications/Notiflix'
 import Axios from "axios";
 import Constants from "~/Constants";
 
@@ -85,7 +85,9 @@ export default defineComponent({
         window.open(response.data.url, '_blank');
       })
     },
-    async viewDescription()
+    async viewDescription() {
+      await Swal.fire(this.description)
+    }
   }
 })
 </script>

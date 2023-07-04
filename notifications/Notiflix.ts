@@ -1,4 +1,6 @@
 import Notiflix from "notiflix";
+import Swal from "sweetalert2";
+
 function Init() {
     Notiflix.Confirm.init({
         backgroundColor: "#020910",
@@ -35,5 +37,6 @@ export {
     Confirm,
     Notify,
     Report,
+    Swal,
     Init
 }

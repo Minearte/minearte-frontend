@@ -29,3 +29,7 @@ onMounted(() => {
 })
 
 </script>
+
+<style>
+@import 'assets/css/dark.css';
+</style>
