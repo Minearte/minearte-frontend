@@ -11,17 +11,17 @@ export default defineI18nConfig(() => ({
       },
       welcome: "Bienvenido a Minearte",
       ip: "mc.minearte.net",
-      clickToCopy: "Click para copiar",
+      clickToCopy: "¡Click para copiar!",
       loading: "Cargando...",
       discord: "Servidor de Discord",
-      clickToJoin: "Click para unirte",
+      clickToJoin: "¡Click para unirte!",
       ipCopied: "IP copiada al portapapeles",
       pageName: "Minearte Network",
       nav: {
         home: "Inicio",
         store: "Tienda",
         discord: "Discord",
-        rules: "Reglas",
+        rules: "Wiki",
       },
       store: {
         meta: {
@@ -34,14 +34,14 @@ export default defineI18nConfig(() => ({
         },
         index: {
           header: 'Bienvenido a la tienda de Minearte Network',
-          subheader: 'Aqui podras comprar rangos y mas tanto para box pvp como survival!',
+          subheader: '¡Aquí podras comprar los rangos de las diferentes modalidades!',
         },
         category: {
           goBack: "Volver",
           buy: "Comprar",
-          description: "Descripcion",
+          description: "Descripción",
         },
-        goTo: "Ir a la seccion: ",
+        goTo: "Ir a la sección: ",
         buyPrompt: {
           title: "Introduce tu nombre de usuario",
           placeholder: "username",
