@@ -18,7 +18,7 @@ const {t} = useI18n();
         <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
           <NavItem langKey="nav.home" icon="bx:bx-home" link="/" />
           <NavItem langKey="nav.store" icon="mdi:cart-outline" link="/tienda" />
-          <NavItem langKey="nav.discord" icon="ic:baseline-discord" link="/discord" />
+          <NavItem langKey="nav.discord" icon="ic:baseline-discord" link="https://discord.minearte.net" target="_blank" />
           <NavItem langKey="nav.rules" icon="bx:bx-book" link="/reglas" />
         </ul>
       </div>
