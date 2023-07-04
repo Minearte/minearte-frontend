@@ -25,7 +25,7 @@ export default defineI18nConfig(() => ({
       },
       store: {
         meta: {
-          title: "Tienda | Minearte Network",
+          title: "Minearte Network | Tienda",
           description: "Tienda de Minearte Network, donde podras comprar rangos y mas tanto para box pvp como survival!",
           keywords: "Tienda, Minearte, Network"
         },

@@ -1,3 +1,21 @@
+<script setup lang="ts">
+const {t} = useI18n();
+
+useHead({
+  title: t("store.meta.title"),
+  meta: [
+    {
+      name: "description",
+      content: t("store.meta.description"),
+    },
+    {
+      name: "keywords",
+      content: t("store.meta.keywords"),
+    },
+  ],
+});
+</script>
+
 <template>
   <NuxtLayout name="tienda">
     <h1 class="text-white text-4xl mb-6">{{ name }}</h1>
