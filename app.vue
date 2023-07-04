@@ -33,4 +33,7 @@ onMounted(() => {
 
 <style>
 @import 'assets/css/dark.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 </style>
