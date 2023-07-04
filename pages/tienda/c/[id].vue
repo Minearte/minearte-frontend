@@ -1,5 +1,6 @@
 <template>
   <NuxtLayout name="tienda">
+    <h1 class="text-white text-4xl mb-6">{{ categories[0].name }}</h1>
     <div class="mb-2 grid auto-row-max">
       <Product v-for="p in packages" :id="p.id.toString()" :title="p.name" :image="p.image" :price="p.price.toString()"/>
     </div>
